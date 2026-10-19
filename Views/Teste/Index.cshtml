@@ -1,0 +1,26 @@
+﻿@using PrjIMV_MVC_CORE.Controllers
+@using PrjIMV_MVC_CORE.Models.PessoaModel
+
+@model TesteViewModel 
+
+
+
+<div class="text-center">
+    <h1 class="display-4">Teste</h1>   
+    <h4>
+        @if(Model.usuario != null)
+            @Model.usuario.Nome @Model.usuario.Sobrenome
+    </h4>  
+
+    <h4>
+        Usuário:
+            @if (Model.usuario != null)
+        @(Model.usuario.ValidaUsuarioSenha("hlrangel", Cpf.Formata("32369280778")) ? "OK" : "Não OK")
+    </h4>
+
+   
+ 
+
+</div>
+
+ 

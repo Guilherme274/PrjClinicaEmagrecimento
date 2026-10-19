@@ -1,0 +1,26 @@
+﻿@if (TempData["AvisosModal"] != null)
+{   
+    <div class="modal fade" id="modalAvisos" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header bg-info text-white">
+                    <h5 class="modal-title">Atenção:</h5>
+                </div>
+
+                <div class="modal-body">
+                    @Html.Raw(TempData["AvisosModal"])
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Ok </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        var modal = new bootstrap.Modal(document.getElementById('modalAvisos'));
+        modal.show();
+    </script>
+}

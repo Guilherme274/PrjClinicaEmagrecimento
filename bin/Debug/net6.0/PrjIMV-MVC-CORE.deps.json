@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "PrjIMV-MVC-CORE/1.0.0": {
+        "runtime": {
+          "PrjIMV-MVC-CORE.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PrjIMV-MVC-CORE/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
